@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <farero class="com"></farero>
+    </title>
+</head>
+
+<body
+    background="https://images3.alphacoders.com/853/thumbbig-85329.webp"
+    style="background-size: 100%;">
+    
+    <center>
+<p style="color: chartreuse;">calculos automaticos</p>
+    </center>
+
+
+
+    <center> <button onclick="botao()">calcule a media</button>
+</body>
+<script>
+    function botao() {
+        alert("calculador de media aperte ok")
+        var num1 = Number(prompt("digite o primeiro número"))
+        var num2 = Number(prompt("digite o segundo número"))
+        var media = (num1 + num2) / 2
+        alert(media)
+    }
+
+</script>
+</center><br>
+
+<center> <button onclick="AGIR()">calcule o delta</button>
+    </body>
+    <script>
+        function AGIR() {
+            alert("calculador de delta aperte ok")
+            var A = Number(prompt("digite o primeiro número"))
+            var B = Number(prompt("digite o segundo número"))
+            var C = Number(prompt("digite o terceiro número"))
+            var delta = (B * B) - 4 * A * C
+            alert(delta)
+        }
+
+    </script>
+</center>
+<br>
+<center> <button onclick="AGIRE()">calcule o bhaskara</button>
+    </body>
+    <script>
+        function AGIRE() {
+            alert("calculador de bhaskara aperte ok")
+            var D = Number(prompt("digite o valor x"))
+            var E = Number(prompt("digite o valor y"))
+            var F = Number(prompt("digite o valor z"))
+            var delta = (E * E) - 4 * D * F;
+            var x1 = (-E + Math.sqrt(delta)) / 2 * D
+            var x2 = (-E - Math.sqrt(delta)) / 2 * D
+            var mensagem = "o resultado do x1 é: " + x1 + ", o resultado de 2x é:" + x2;
+            alert(mensagem)
+        }
+
+    </script>
+</center><br>
+<center><button onclick="calculoidd()">quatos anos terei até o final de 2022?</button></center>
+<script>function calculoidd() {
+        var H = Number(prompt("digite o ano que você nasceu"))
+        var calculo = ((H - 2022) * -1)
+        var msg =("no final de 2022 você terá " + calculo + " anos.\n")
+        if (calculo < 18) {
+            msg +="portanto, é menor de idade!\n";
+        }
+        else {
+            msg +="portanto, é maior de idade!\n";
+        }
+    if (calculo % 2 == 0) {
+        msg +="Sua idade será par";
+    }
+    else{
+msg +="sua idade será impar";
+    }
+    alert(msg)
+    }
+
+</script>
+<br>
+
+    <center><p style="color: chartreuse;">calculos de PA(Progressão aritmetica)</p></center>
+    <br>
+
+    <center> <button onclick="calculoAN()">cálculo do PA</button>
+    <script>
+        
+    function calculoAN(){
+    var A1 = Number(prompt("digite o valor de A1"));
+    var N = Number(prompt("digite o valor de N"));
+    var R = Number(prompt("digite o valor de R"));
+    var AN = A1 + (N-1) * R;
+    alert("neste caso o AN será: "+AN);
+    }
+    </script>
+    <br>
+    <br>
+    <center> <button onclick="calculoA1()">calcule do A1 </button>
+    <script>
+        
+        function calculoA1(){
+        var AN = Number(prompt("digite o valor de AN"));
+        var N = Number(prompt("digite o valor de N"));
+        var R = Number(prompt("digite o valor de R"));
+        var A1 = AN - (N-1) * R;
+        alert("neste caso o A1 será: "+A1);
+        }
+        </script>
+        <br>
+        <br>
+    
+<center> <button onclick="calculoR()">cálculo do R</button>
+    <script>
+        
+    function calculoR(){
+    var A1 = Number(prompt("digite o valor de A1"));
+    var N = Number(prompt("digite o valor de N"));
+    var AN = Number(prompt("digite o valor de AN"));
+    var R = (AN-A1)/(N-1);
+    alert("neste caso o R será: "+R);
+    }
+    </script>
+    <br>
+    <br>
+    <center> <button onclick="calculoN()">cálculo do N</button>
+        <script>
+            
+        function calculoN(){
+        var A1 = Number(prompt("digite o valor de A1"));
+        var R = Number(prompt("digite o valor de N"));
+        var AN = Number(prompt("digite o valor de AN"));
+        var N = 1+ ((AN-A1) / R);
+        alert("neste caso o R será: "+N);
+        }
+        </script>
+        <br>
+    
+    
+    
+
